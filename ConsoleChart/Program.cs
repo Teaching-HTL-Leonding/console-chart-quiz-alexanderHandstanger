@@ -19,7 +19,6 @@ namespace ConsoleChart
             int indexGroup = -1;
             int indexSum = -1;
 
-            int tempOriWidht = Console.WindowWidth;
             int tempOriHeight = Console.WindowHeight;
             Console.SetWindowSize(150, tempOriHeight);
 
@@ -71,7 +70,7 @@ namespace ConsoleChart
             //output
             foreach (var item in result)
             {
-                Console.Write($"{item.Key, 32} | ");
+                Console.Write($"{item.Key, 41} | ");
                 Console.BackgroundColor = ConsoleColor.Red;
                 for (int i = 0; i < item.Value; i++)
                 {
